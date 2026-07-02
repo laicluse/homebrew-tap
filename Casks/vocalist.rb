@@ -1,6 +1,6 @@
 cask "vocalist" do
-  version "1.0.105"
-  sha256 "ebd2176c4983c52f400e8ed92cbf2e7d075bbce20d8f8847802492088454fbbc"
+  version "1.0.106"
+  sha256 "a61fdaeaaaf6d036f4fa0fc96faf8977e5955061408ac7e099595641cadd31c7"
 
   url "https://github.com/laicluse/vocalist-releases/releases/download/v#{version}/Vocalist-#{version}.dmg",
       verified: "github.com/laicluse/vocalist-releases/"
