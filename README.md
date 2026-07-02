@@ -27,7 +27,7 @@ The cask installs three artifacts: `Vocalist.app`, the `vocalist` CLI, and the b
 - `version` mirrors `CFBundleShortVersionString` in
   `vocalist-swift/Resources/Info.plist`.
 - `url` points at the public, notarized DMG asset.
-- **`sha256` must be regenerated from the published, notarized Release DMG.** The initial value comes from a local development build and must not be treated as a release checksum.
+- **`sha256` must match the published, notarized Release DMG.** Regenerate it from the exact artifact uploaded to GitHub Releases whenever the DMG changes.
 - `depends_on macos: :tahoe` is Homebrew's minimum-version form (it parses
   with a `>=` comparator), so macOS Tahoe and newer satisfy it.
 
