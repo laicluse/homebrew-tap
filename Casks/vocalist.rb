@@ -1,11 +1,11 @@
 cask "vocalist" do
-  version "1.0.106"
-  sha256 "a61fdaeaaaf6d036f4fa0fc96faf8977e5955061408ac7e099595641cadd31c7"
+  version "1.0.108"
+  sha256 "c354877a13fbb2eb7bfb9dad08ee9989d84a7f6ff25ce45355c323b61be14284"
 
   url "https://github.com/laicluse/vocalist-releases/releases/download/v#{version}/Vocalist-#{version}.dmg",
       verified: "github.com/laicluse/vocalist-releases/"
   name "Vocalist"
-  desc "Hands-free prompting for CMUX coding-agent sessions"
+  desc "Hands-free prompting for coding-agent sessions"
   homepage "https://laicluse.com/vocalist/"
 
   depends_on macos: :tahoe
