@@ -1,6 +1,6 @@
 cask "vocalist" do
-  version "1.0.109"
-  sha256 "1ed3fb3de9b9e4ae2b7f81b7888e171803a5414785c5bf4468a92acf789ef165"
+  version "1.0.110"
+  sha256 "563e77fcc79192a73d3e5222b055824885b44099ebd5ad3583790351ef25bf2c"
 
   url "https://github.com/laicluse/vocalist-releases/releases/download/v#{version}/Vocalist-#{version}.dmg",
       verified: "github.com/laicluse/vocalist-releases/"
@@ -23,5 +23,7 @@ cask "vocalist" do
   caveats <<~EOS
     Connect the coding-agent plugin after install:
       vocalist plugin install
+    If setup appears stuck:
+      vocalist plugin install --verbose --timeout-seconds 10
   EOS
 end
